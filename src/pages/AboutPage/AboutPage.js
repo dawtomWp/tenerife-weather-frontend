@@ -21,7 +21,7 @@ export default function AboutPage() {
               minut je aktualizować i wyświetlać.{" "}
               <p>
                 Dzięki naszej ciągłej nauce poszerzaniu umiejętności, jesteśmy
-                gotowi sprostać kolejny wyzwaniom projektowym.
+                gotowi sprostać kolejnym wyzwaniom projektowym.
               </p>
             </p>
             <p>
