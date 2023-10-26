@@ -1,0 +1,79 @@
+.ContactPage{
+        font-family: 'Raleway', sans-serif;
+}
+.ContactTitle{
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    color: ghostwhite;
+    text-shadow: 2px 2px 5px cadetblue;
+    font-weight: 700;
+}
+.DetailsContainer {
+    display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 0px;
+color: ghostwhite;
+text-shadow: 2px 2px 5px cadetblue;
+
+}
+    h4{
+        text-align: center;
+    }
+    .box1 {
+         grid-area: 2 / 2 / 3 / 3;
+         background: rgb(101,97,134);
+        background: radial-gradient(circle, rgba(101,97,134,1) 0%, rgba(99,182,227,1) 100%);
+        border: 1px white solid;
+         }
+    .box2 {
+         grid-area: 2 / 3 / 3 / 4;
+         background: rgb(101,97,134);
+        background: radial-gradient(circle, rgba(101,97,134,1) 0%, rgba(99,182,227,1) 100%);
+        border: 1px white solid;
+         }
+    .box3 { 
+        grid-area: 2 / 4 / 3 / 5;
+        background: rgb(101,97,134);
+        background: radial-gradient(circle, rgba(101,97,134,1) 0%, rgba(99,182,227,1) 100%);
+        border: 1px white solid;
+    }
+
+    a:link{
+        color: cyan;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:visited{
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+    }
+    a:hover {
+        color: darkblue;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      /*RESPONYWNOŚĆ STRONY*/
+      @media (max-width:768px) {
+        .ContactTitle{
+            font-size: 30px;
+            margin-top: 120px;
+            text-align: left;
+        }
+        .DetailsContainer {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 10px;
+            margin-left: 10px;
+        }
+        .box1 { grid-area: 1 / 1 / 2 / 2; }
+        .box2 { grid-area: 2 / 1 / 3 / 2; }
+        .box3 { grid-area: 3 / 1 / 4 / 2; }
+    }
